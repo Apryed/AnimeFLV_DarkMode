@@ -6,8 +6,8 @@
 // @author       Apryed
 // @match        https://www3.animeflv.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
-// @downloadURL  https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
-// @updateURL    https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
+// @downloadURL  https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/UserScript.js
+// @updateURL    https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/UserScript.js
 // @supportURL   https://github.com/Apryed/AnimeFLV_DarkMode/issues
 // @run-at       document-end
 // @grant        none
