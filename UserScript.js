@@ -21,7 +21,7 @@
     let blue="#14bbf0"
     let white="#FFF"
 
-    let Style = `.Header {background-color:`+grey+`;} #search-anime, h1, h2, a, strong { color:`+white+` !important;} .Body, .WdgtCn, .WdgtCn .Title {background-color:`+black+`;color:`+white+`;} .CapiTnv>li>a {background-color:`+lgrey+`;} .CapiTnv>li.active>a {background-color:`+grey+`;box-shadow: inset 0 2px 0 `+blue+`;} .fa-play::before, .fa-chevron-left::before ,.fa-th-list, .fa-eye-slash {color:`+blue+` !important} .Emision, .CapNv, .Rprt, .CVst, .Xpnd {background-color:`+grey+`;color:`+white+`;} .Emision a:hover {color:`+blue+` !important} @media (min-width: 1020px) {.CpCn.show .CpCnA:before, .CpCn.show .CpCnA:after {background-color:`+black+`}}`
+    let Style = `.Header,.Footer {background-color:`+grey+`;} #search-anime, h1, h2, a, strong { color:`+white+` !important;} .Body, .WdgtCn, .WdgtCn .Title {background-color:`+black+`;color:`+white+`;} .CapiTnv>li>a {background-color:`+lgrey+`;} .CapiTnv>li.active>a {background-color:`+grey+`;box-shadow: inset 0 2px 0 `+blue+`;} .fa-play::before, .fa-chevron-left::before ,.fa-th-list, .fa-eye-slash {color:`+blue+` !important} .Emision, .CapNv, .Rprt, .CVst, .Xpnd {background-color:`+grey+`;color:`+white+`;} .Emision a:hover {color:`+blue+` !important} @media (min-width: 1020px) {.CpCn.show .CpCnA:before, .CpCn.show .CpCnA:after {background-color:`+black+`}}`
     let sS = document.createElement("style")
     sS.setAttribute("type", "text/css");
     sS.innerText = Style
