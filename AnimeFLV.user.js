@@ -25,4 +25,5 @@
 
     document.getElementsByClassName("ShrCnB fa-share-alt")[0].remove()
     document.getElementsByClassName("Clgt")[0].remove()
+    document.getElementsByClassName("AnflvTl")[0].remove()
 })();
