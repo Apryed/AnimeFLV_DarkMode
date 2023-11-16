@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         AnimeFLV - Dark Mode
-// @namespace    Apryed's Script
+// @namespace    https://github.com/Apryed/AnimeFLV_DarkMode
 // @version      2.0
 // @description  Transforms AnimeFLV to Dark Mode!
 // @author       Apryed
