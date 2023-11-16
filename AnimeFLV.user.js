@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AnimeFLV - Dark Mode
 // @namespace    https://github.com/Apryed/AnimeFLV_DarkMode
-// @version      2.1.5
+// @version      2.1.6
 // @description  Transforms AnimeFLV to Dark Mode!
 // @author       Apryed
 // @match        https://www3.animeflv.net/*
@@ -24,6 +24,7 @@
     sS.setAttribute("type", "text/css");
     sS.innerText = Style
     document.head.appendChild(sS)
+    document.getElementsByClassName("lvbx")[0].remove();
 
     if (window.location.href.slice(26,29) == "ver") {
         document.getElementsByClassName("ShrCnB fa-share-alt")[0].remove();
