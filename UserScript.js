@@ -8,7 +8,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
 // @downloadURL  https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
 // @updateURL    https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
-// @supportURL   https://github.com/Apryed/AnimeFLV_DarkMode/pulls
+// @supportURL   https://github.com/Apryed/AnimeFLV_DarkMode/issues
 // @run-at       document-end 
 // @grant        none
 // ==/UserScript==
