@@ -9,7 +9,7 @@
 // @downloadURL  https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
 // @updateURL    https://github.com/Apryed/AnimeFLV_DarkMode/raw/master/UserScript.js
 // @supportURL   https://github.com/Apryed/AnimeFLV_DarkMode/issues
-// @run-at       document-end 
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
