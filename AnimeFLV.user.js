@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name         AnimeFLV - Dark Mode
-// @namespace    https://github.com/Apryed/AnimeFLV_DarkMode
-// @version      2.2.1
-// @description  Transforms AnimeFLV to Dark Mode!
-// @author       Apryed
-// @match        https://www3.animeflv.net/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
-// @downloadURL  https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
-// @updateURL    https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
-// @supportURL   https://github.com/Apryed/AnimeFLV_DarkMode/issues
-// @run-at       document-end
-// @grant        none
+// @name			AnimeFLV - Dark Mode
+// @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
+// @version			2.2.1
+// @description		Transforms AnimeFLV to Dark Mode!
+// @author			Apryed
+// @match			https://www3.animeflv.net/*
+// @icon			https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
+// @downloadURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
+// @updateURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
+// @supportURL		https://github.com/Apryed/AnimeFLV_DarkMode/issues
+// @run-at			document-end
+// @grant			none
 // ==/UserScript==
 
 (function () {
@@ -18,8 +18,7 @@
 
 	let black = "#000000", grey = "#0A0A0A", lgrey = "#2A2A2A", blue = "#14bbf0", red = "#fb3447", white = "#FFFFFF", fb = "#4267B2", gold = "#ffc107"
 
-	let Style = `
-	::selection{background:`+ lgrey + `;color:` + gold + `}
+	let Style = `::selection{background:`+ lgrey + `;color:` + gold + `}
 	body{color:`+ white + `;background:` + black + `;scrollbar-color:` + lgrey + ` ` + grey + `}
 	body::-webkit-scrollbar{background:`+ grey + `;}
 	body::-webkit-scrollbar-thumb{background:`+ lgrey + `;}
@@ -106,8 +105,6 @@
 		}
 	}
 
-	document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin);
-
 	if (document.getElementsByClassName("lvbx")[0]) {
 		document.getElementsByClassName("lvbx")[0].remove();
 	}
@@ -115,6 +112,7 @@
 	if (window.location.href.slice(26, 29) == "ver") {
 		document.getElementsByClassName("ShrCnB fa-share-alt")[0].remove();
 		document.getElementsByClassName("Clgt")[0].remove();
+		document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin);
 
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = black })
 	} else {
