@@ -18,24 +18,24 @@
 
 	let black = "#000000", grey = "#0A0A0A", lgrey = "#2A2A2A", blue = "#14bbf0", red = "#fb3447", white = "#FFFFFF", fb = "#4267B2", gold = "#ffc107"
 
-	let Style = `::selection{background:`+ lgrey + `;color:` + gold + `}
-	body{color:`+ white + `;background:` + black + `;scrollbar-color:` + lgrey + ` ` + grey + `}
+	let Style = `::selection{background:`+ lgrey + `;color:` + gold + `;}
+	body{color:`+ white + `;background:` + black + `;scrollbar-color:` + lgrey + ` ` + grey + `;}
 	body::-webkit-scrollbar{background:`+ grey + `;}
 	body::-webkit-scrollbar-thumb{background:`+ lgrey + `;}
 
 	.Header,.Footer {background:`+ grey + `;}
 	.Header>.Mid{background:rgba(0,0,0,.3);}
 
-	a, .Title{color:`+ white + `}
+	a, .Title{color:`+ white + `;}
 	@media (max-width: 1020px) {
-		.BtnMenu:before {color:`+ grey + `}
-		#BtnMenu:checked~label span {color:`+ blue + `}
-		#BtnMenu:checked~.BtnMenu:before {color:`+ gold + `}
+		.BtnMenu:before {color:`+ grey + `;}
+		#BtnMenu:checked~label span {color:`+ blue + `;}
+		#BtnMenu:checked~.BtnMenu:before {color:`+ gold + `;}
 	}
 	.Header>.Mid .Search>form input{background:`+ black + `;}
 	.DpdwCnt.TtCn{background:`+ lgrey + `;}
-	.DpdwCnt.TtCn:before{border-bottom:5px solid `+ lgrey + `}
-	.ListResult>li{border-bottom:1px solid `+ grey + `}
+	.DpdwCnt.TtCn:before{border-bottom:5px solid `+ lgrey + `;}
+	.ListResult>li{border-bottom:1px solid `+ grey + `;}
 
 	.Header>.Mid .Login #DpdwLnk-Login:checked+label {color: `+ black + `;}
 	.Header>.Mid .Login #DpdwLnk-Login:checked+label span:before {color: `+ gold + `;}
@@ -73,7 +73,7 @@
 	.filters .multiselect-container>li.active>a, .filters .multiselect-container>li.active>a>label:before {color:`+ gold + `;}
 	.fa-filter:before {color:`+ gold + `;}
 	.Anime.alt>.Title{color:`+ white + `;}
-	.WdgtCn{background:`+ grey + `;}
+    .WdgtCn{background:`+ grey + `;}
 	.WdgtCn .Anime.alt .Image, .WdgtCn .Anime.alt .Description{box-shadow:0 3px 5px `+ blue + `38;}
 	.Anime.alt .Description .Title{color:`+ white + `;}
 	.Anime.alt .Description{background:`+ lgrey + `;color:` + white + `;}
@@ -87,11 +87,14 @@
 	.CapiTnv>li>a {background:`+ grey + `;}
 	.CapiTnv>li.active>a {background:`+ lgrey + `;box-shadow: inset 0 2px 0 ` + blue + `;}
 	.Emision, .CapNv, .Rprt, .CVst, .Xpnd {background-color:`+ grey + `;color:` + white + `;}
-	.Emision a:hover {color:`+ blue + `}
-	.CapNvPv:before, .CapNvNx:before{color:`+ gold + `}
-	.fa-eye::before, .fa-expand::before{color:`+ red + `}
-	.fa-eye-slash::before, .fa-compress::before{color:`+ blue + `}
-	.NwBxCn figure span{background:`+ blue + `}
+	.Emision a:hover {color:`+ blue + `;}
+	.CapNvPv:before, .CapNvNx:before{color:`+ gold + `;}
+	.fa-eye::before, .fa-expand::before{color:`+ red + `;}
+	.fa-eye-slash::before, .fa-compress::before{color:`+ blue + `;}
+	.NwBxCn figure span{background:`+ blue + `;}
+	.alertify .alert>*, .alertify .dialog>*{background:`+ black + `; border:1px solid `+gold+`20;box-shadow: 0 0 10px 0 `+blue+`5F;}
+	.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button), .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button){color:`+blue+`;background:`+lgrey+`;}
+	.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover {background-color: `+grey+`;}
 	`
 	let sS = document.createElement("style")
 	sS.setAttribute("type", "text/css");
