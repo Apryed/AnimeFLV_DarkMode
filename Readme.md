@@ -1,1 +1,3 @@
-[Install](https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js) to [TamperMonkey](https://www.tampermonkey.net/) and/or [Violentmonkey](https://violentmonkey.github.io/get-it/) - Should autoupdate. Let me know in case it does not.
+[Install](https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js) to [TamperMonkey](https://www.tampermonkey.net/) and/or [Violentmonkey](https://violentmonkey.github.io/get-it/).
+
+**Recommend** installing of [Ublock Origin and Ublock Origin Lite](https://ublockorigin.com/es) - Chrome based pluggin.
