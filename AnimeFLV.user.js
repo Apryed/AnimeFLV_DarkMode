@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name			AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version			2.2.6
+// @version			2.2.61
 // @description		Transforms AnimeFLV to Dark Mode!
 // @author			Apryed
 // @match			https://www3.animeflv.net/*
@@ -16,7 +16,7 @@
 (function () {
 	'use strict';
 	let black = "#000000", grey = "#0A0A0A", lgrey = "#2A2A2A", blue = "#14bbf0", red = "#fb3447", white = "#FFFFFF", fb = "#4267B2", gold = "#ffc107"
-	let Style = `:root {--c-black:`+black+`;--c-grey:`+grey+`;--c-lgrey:`+lgrey+`;--c-blue:`+blue+`;--c-red:`+red+`;--c-white:`+white+`;--c-fb:`+fb+`;--c-gold:`+gold+`;}
+	let Style = `:root {--c-black:`+black+`;--c-grey:`+grey+`;--c-lgrey:`+lgrey+`;--c-blue:`+blue+`;--c-blue38:`+blue+`38;--c-red:`+red+`;--c-white:`+white+`;--c-fb:`+fb+`;--c-gold:`+gold+`;}
     ::selection{background: var(--c-lgrey);color:var(--c-gold);}
 	body{color:var(--c-white);background:var(--c-black);scrollbar-color:var(--c-lgrey) var(--c-grey);}
 	body::-webkit-scrollbar{background:var(--c-grey);}
@@ -51,7 +51,7 @@
 	.Title.Page h1, .Title.Page h2, .Title.Page h3, .Title.Page h4, .Title.Page h5, .Title.Page h6{color:var(--c-white);}
 	.Title.Page.fa-star:before{color: var(--c-red)A0;}
 
-	.Anime.alt .Image {background:var(--c-grey);box-shadow:0 3px 5px var(--c-blue)38;}
+	.Anime.alt .Image {background:var(--c-grey);box-shadow:0 3px 5px var(--c-blue38);}
 	.Anime.alt>a>.Title{color:var(--c-white);}
 	.Anime.alt.B .Description{background:var(--c-lgrey);color:var(--c-white);}
 	.fa-facebook-f:before, .fa-facebook:before {color:var(--c-fb);}
@@ -75,7 +75,7 @@
 	.fa-filter:before {color:var(--c-gold);}
 	.Anime.alt>.Title{color:var(--c-white);}
     .WdgtCn{background:var(--c-grey);}
-	.WdgtCn .Anime.alt .Image, .WdgtCn .Anime.alt .Description{box-shadow:0 3px 5px var(--c-blue)38;}
+	.WdgtCn .Anime.alt .Image, .WdgtCn .Anime.alt .Description{box-shadow:0 3px 5px var(--c-blue38);}
 	.Anime.alt .Description .Title{color:var(--c-white);}
 	.Anime.alt .Description{background:var(--c-lgrey);color:var(--c-white);}
 	.Anime.alt .Description .Vts{color:var(--c-white);}
