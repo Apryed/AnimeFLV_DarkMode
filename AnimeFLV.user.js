@@ -113,7 +113,9 @@
     .ListAnmRel>li:before{color: inherit;}
 	.ListAnmRel>li>a:hover{color:var(--c-blue);}
 	.ListCaps>li>a:hover {color:var(--c-gold);}
-	.BtnNw{background:var(--c-grey);color: var(--c-white);}`
+	.BtnNw{background:var(--c-grey);color: var(--c-white);}
+	#eSearch{border:1px solid var(--c-lgrey);color:var(--c-gold);}
+	.lstopt-frm .btn {background:var(--c-blue);color:var(--c-black);}`
 	let sS = document.createElement("style")
 	sS.setAttribute("type", "text/css");
 	sS.innerHTML = Style
