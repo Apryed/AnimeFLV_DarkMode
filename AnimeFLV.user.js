@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name			AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version			2.2.5
+// @version			2.2.6
 // @description		Transforms AnimeFLV to Dark Mode!
 // @author			Apryed
 // @match			https://www3.animeflv.net/*
@@ -86,7 +86,8 @@
 	.CpCnA .CapiTop .Title{color:var(--c-white);}
 	.CpCnA .CapiTop .SubTitle{color:var(--c-gold);}
 	.CapiTnv>li>a {background:var(--c-grey);}
-	.CapiTnv>li.active>a {background:var(--c-lgrey);box-shadow: inset 0 2px 0 var(--c-blue);}
+	.CapiTnv>li>a:hover {color:var(--c-gold);}
+	.CapiTnv>li.active>a {background:var(--c-lgrey);box-shadow: inset 0 2px 0 var(--c-blue);color:var(--c-blue);}
 	.Emision, .CapNv, .Rprt, .CVst, .Xpnd {background-color:var(--c-grey);color:var(--c-white);}
 	.Emision a:hover {color:var(--c-blue);}
 	.CapNvPv:before, .CapNvNx:before{color:var(--c-gold);}
@@ -106,7 +107,13 @@
 	.panel{background:var(--c-black);border:1px solid var(--c-grey);border-radius:5px;}
 	.form-group>label{color:var(--c-blue);}
 	.form-control {color: var(--c-white);background:var(--c-grey);border: 1px solid var(--c-blue)38}
-	input[type="date"]::-webkit-calendar-picker-indicator {filter: invert(1);}`
+	input[type="date"]::-webkit-calendar-picker-indicator {filter: invert(1);}
+	.ListAnmRel>li{color: inherit;}
+	.ListAnmRel>li>a{color: var(--c-gold);}
+    .ListAnmRel>li:before{color: inherit;}
+	.ListAnmRel>li>a:hover{color:var(--c-blue);}
+	.ListCaps>li>a:hover {color:var(--c-gold);}
+	.BtnNw{background:var(--c-grey);color: var(--c-white);}`
 	let sS = document.createElement("style")
 	sS.setAttribute("type", "text/css");
 	sS.innerHTML = Style
@@ -130,6 +137,8 @@
 		document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin);
 
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = black })
+	} else if (window.location.href.slice(26, 31) == "anime") {
+		document.getElementById("episodeList").removeAttribute("style");
 	} else {
 		document.getElementsByClassName("AnflvTl")[0].remove();
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = grey })
