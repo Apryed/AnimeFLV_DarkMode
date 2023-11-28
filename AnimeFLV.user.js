@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name			AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version			2.2.61
+// @version			2.2.7
 // @description		Transforms AnimeFLV to Dark Mode!
 // @author			Apryed
 // @match			https://www3.animeflv.net/*
@@ -139,9 +139,7 @@
 		document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin);
 
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = black })
-	} else if (window.location.href.slice(26, 31) == "anime") {
-		document.getElementById("episodeList").removeAttribute("style");
-	} else {
+	} else if (window.location.href.slice(26, 31) == "anime") {} else {
 		document.getElementsByClassName("AnflvTl")[0].remove();
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = grey })
 	}
