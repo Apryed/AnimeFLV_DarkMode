@@ -14,6 +14,6 @@
 // ==/UserScript==
 
 (function () {
-	'use strict';
+	'use strict'
 	document.querySelectorAll("div.WdgtCn[style='background: rgb(0, 0, 0);'")[1].remove()
 })();
