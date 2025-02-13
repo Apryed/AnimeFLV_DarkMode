@@ -117,7 +117,7 @@
 	#eSearch{border:1px solid var(--c-lgrey);color:var(--c-gold);}
 	.lstopt-frm .btn {background:var(--c-blue);color:var(--c-black);}`
 	let sS = document.createElement("style")
-	sS.setAttribute("type", "text/css");
+	sS.setAttribute("type", "text/css")
 	sS.innerHTML = Style
 	document.head.appendChild(sS)
 
@@ -125,22 +125,22 @@
 		if (this.classList[this.classList.length - 1] == "on") {
 			document.querySelector(".CpCnC").style.margin = "60px 0 0 0";
 		} else {
-			document.querySelector(".CpCnC").removeAttribute("style");
+			document.querySelector(".CpCnC").removeAttribute("style")
 		}
 	}
 
 	if (document.getElementsByClassName("lvbx")[0]) {
-		document.getElementsByClassName("lvbx")[0].remove();
+		document.getElementsByClassName("lvbx")[0].remove()
 	}
 
 	if (window.location.href.slice(26, 29) == "ver") {
-		document.getElementsByClassName("ShrCnB fa-share-alt")[0].remove();
-		document.getElementsByClassName("Clgt")[0].remove();
-		document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin);
+		document.getElementsByClassName("ShrCnB fa-share-alt")[0].remove()
+		document.getElementsByClassName("Clgt")[0].remove()
+		document.querySelectorAll(".BtnNw.Xpnd.BxSdw.AAShwHdd-lnk")[0].addEventListener("click", margin)
 
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = black })
 	} else if (window.location.href.slice(26, 31) == "anime") {} else {
-		document.getElementsByClassName("AnflvTl")[0].remove();
+		document.getElementsByClassName("AnflvTl")[0].remove()
 		document.querySelectorAll(".WdgtCn").forEach((el) => { el.style.background = grey })
 	}
-})();
+})()
