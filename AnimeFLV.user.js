@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 (function () {
-	'use strict';
+	'use strict'
 	let black = "#000000", grey = "#0A0A0A", lgrey = "#2A2A2A", blue = "#14bbf0", red = "#fb3447", white = "#FFFFFF", fb = "#4267B2", gold = "#ffc107"
 	let Style = `:root {--c-black:`+black+`;--c-grey:`+grey+`;--c-lgrey:`+lgrey+`;--c-lgrey00:`+lgrey+`00;--c-lgreyFF:`+lgrey+`FF;--c-blue:`+blue+`;--c-blue38:`+blue+`38;--c-blue5F:`+blue+`5F;--c-red:`+red+`;--c-red:`+red+`A0;--c-white:`+white+`;--c-fb:`+fb+`;--c-gold:`+gold+`;--c-gold20:`+gold+`20;}
 	::selection{background: var(--c-lgrey);color:var(--c-gold);}
