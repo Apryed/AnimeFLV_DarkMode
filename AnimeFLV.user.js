@@ -1,23 +1,23 @@
 // ==UserScript==
-// @name			AnimeFLV - Dark Mode
+// @name		AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version			2.2.7
+// @version		2.2.8
 // @description		Transforms AnimeFLV to Dark Mode!
-// @author			Apryed
-// @match			https://www3.animeflv.net/*
-// @icon			https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
+// @author		Apryed
+// @match		https://www3.animeflv.net/*
+// @icon		https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
 // @downloadURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
 // @updateURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
 // @supportURL		https://github.com/Apryed/AnimeFLV_DarkMode/issues
-// @run-at			document-end
-// @grant			none
+// @run-at		document-end
+// @grant		none
 // ==/UserScript==
 
 (function () {
 	'use strict';
 	let black = "#000000", grey = "#0A0A0A", lgrey = "#2A2A2A", blue = "#14bbf0", red = "#fb3447", white = "#FFFFFF", fb = "#4267B2", gold = "#ffc107"
-	let Style = `:root {--c-black:`+black+`;--c-grey:`+grey+`;--c-lgrey:`+lgrey+`;--c-blue:`+blue+`;--c-blue38:`+blue+`38;--c-red:`+red+`;--c-white:`+white+`;--c-fb:`+fb+`;--c-gold:`+gold+`;}
-    ::selection{background: var(--c-lgrey);color:var(--c-gold);}
+	let Style = `:root {--c-black:`+black+`;--c-grey:`+grey+`;--c-lgrey:`+lgrey+`;--c-lgrey00:`+lgrey+`00;--c-lgreyFF:`+lgrey+`FF;--c-blue:`+blue+`;--c-blue38:`+blue+`38;--c-blue5F:`+blue+`5F;--c-red:`+red+`;--c-red:`+red+`A0;--c-white:`+white+`;--c-fb:`+fb+`;--c-gold:`+gold+`;--c-gold20:`+gold+`20;}
+	::selection{background: var(--c-lgrey);color:var(--c-gold);}
 	body{color:var(--c-white);background:var(--c-black);scrollbar-color:var(--c-lgrey) var(--c-grey);}
 	body::-webkit-scrollbar{background:var(--c-grey);}
 	body::-webkit-scrollbar-thumb{background:var(--c-lgrey);}
@@ -49,9 +49,9 @@
 	.Wdgt>.Top[class*=fa-]:before{color:var(--c-blue);}
 
 	.Title.Page h1, .Title.Page h2, .Title.Page h3, .Title.Page h4, .Title.Page h5, .Title.Page h6{color:var(--c-white);}
-	.Title.Page.fa-star:before{color: var(--c-red)A0;}
+	.Title.Page.fa-star:before{color: var(--c-redA0);}
 
-	.Anime.alt .Image {background:var(--c-grey);box-shadow:0 3px 5px var(--c-blue38);}
+	.Anime.alt .Image {background:var(--c-grey);box-shadow:0 3px 5px var(--c-blue);}
 	.Anime.alt>a>.Title{color:var(--c-white);}
 	.Anime.alt.B .Description{background:var(--c-lgrey);color:var(--c-white);}
 	.fa-facebook-f:before, .fa-facebook:before {color:var(--c-fb);}
@@ -62,8 +62,8 @@
 	.fa-google-plus:before {color:var(--c-red);}
 
 	.btn-default{color:var(--c-white);background:var(--c-grey);border:0;}
-    .btn-default:hover {color:var(--c-white);background:var(--c-black);border:0;}
-    .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {color:var(--c-gold);background:var(--c-black);border:0;}
+	.btn-default:hover {color:var(--c-white);background:var(--c-black);border:0;}
+	.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {color:var(--c-gold);background:var(--c-black);border:0;}
 	.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {color:inherit;}
 	.filters .btn-group.open>button, .filters .btn-group button:hover, .filters .btn-group button:focus{background:var(--c-black) !important;color:inherit;}
 	.filters .open .caret:before{color:var(--c-gold);}
@@ -74,13 +74,13 @@
 	.filters .multiselect-container>li.active>a, .filters .multiselect-container>li.active>a>label:before {color:var(--c-gold);}
 	.fa-filter:before {color:var(--c-gold);}
 	.Anime.alt>.Title{color:var(--c-white);}
-    .WdgtCn{background:var(--c-grey);}
+	.WdgtCn{background:var(--c-grey);}
 	.WdgtCn .Anime.alt .Image, .WdgtCn .Anime.alt .Description{box-shadow:0 3px 5px var(--c-blue38);}
 	.Anime.alt .Description .Title{color:var(--c-white);}
 	.Anime.alt .Description{background:var(--c-lgrey);color:var(--c-white);}
 	.Anime.alt .Description .Vts{color:var(--c-white);}
 	.Anime.alt .Description p:before{color:var(--c-white);}
-	.Anime.alt .Description:before{background: -moz-linear-gradient(top,var(--c-lgrey)00 0%,var(--c-lgrey)FF 100%);background: -webkit-linear-gradient(top,var(--c-lgrey)00 0%,var(--c-lgrey)FF 100%);background: linear-gradient(to bottom,var(--c-lgrey)00 0%,var(--c-lgrey)FF 100%);}
+	.Anime.alt .Description:before{background: -moz-linear-gradient(top,var(--c-lgrey00) 0%,var(--c-lgreyFF) 100%);background: -webkit-linear-gradient(top,var(--c-lgrey00) 0%,var(--c-lgreyFF) 100%);background: linear-gradient(to bottom,var(--c-lgrey00) 0%,var(--c-lgreyFF) 100%);}
 
 	.CpCn.show .CpCnA:before, .CpCn.show .CpCnA:after{background:var(--c-black);}
 	.CpCnA .CapiTop .Title{color:var(--c-white);}
@@ -94,7 +94,7 @@
 	.fa-eye::before, .fa-expand::before{color:var(--c-red);}
 	.fa-eye-slash::before, .fa-compress::before{color:var(--c-blue);}
 	.NwBxCn figure span{background:var(--c-blue);}
-	.alertify .alert>*, .alertify .dialog>*{background:var(--c-black); border:1px solid var(--c-gold)20;box-shadow: 0 0 10px 0 var(--c-blue)5F;}
+	.alertify .alert>*, .alertify .dialog>*{background:var(--c-black); border:1px solid var(--c-gold20);box-shadow: 0 0 10px 0 var(--c-blue5F);}
 	.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button), .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button){color:var(--c-blue);background:var(--c-lgrey);}
 	.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover {background-color: var(--c-grey);}
 	.Sidebar .list-group{border:1px solid var(--c-grey);}
@@ -103,14 +103,14 @@
 	a.list-group-item, button.list-group-item{color:var(--c-blue);}
 	.panel-default{border:none;}
 	.panel-default > .panel-heading {color:var(--c-white);background:var(--c-grey);border-color:var(--c-grey);}
-    .panel-heading{padding: 10px 15px;}
+	.panel-heading{padding: 10px 15px;}
 	.panel{background:var(--c-black);border:1px solid var(--c-grey);border-radius:5px;}
 	.form-group>label{color:var(--c-blue);}
-	.form-control {color: var(--c-white);background:var(--c-grey);border: 1px solid var(--c-blue)38}
+	.form-control {color: var(--c-white);background:var(--c-grey);border: 1px solid var(--c-blue38)}
 	input[type="date"]::-webkit-calendar-picker-indicator {filter: invert(1);}
 	.ListAnmRel>li{color: inherit;}
 	.ListAnmRel>li>a{color: var(--c-gold);}
-    .ListAnmRel>li:before{color: inherit;}
+	.ListAnmRel>li:before{color: inherit;}
 	.ListAnmRel>li>a:hover{color:var(--c-blue);}
 	.ListCaps>li>a:hover {color:var(--c-gold);}
 	.BtnNw{background:var(--c-grey);color: var(--c-white);}
