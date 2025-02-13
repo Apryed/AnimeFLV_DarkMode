@@ -14,12 +14,12 @@
 // ==/UserScript==
 
 (function () {
-	'use strict';
+	'use strict'
 	// Removes Right Pannel - TikTock, News and Discord invitation
-	document.querySelector("div.CpCnC").remove();
+	document.querySelector("div.CpCnC").remove()
 	// Resize main DIV to proper display width
-	document.querySelectorAll("div.Container")[1].children[0].style.padding = "0";
-	document.querySelectorAll("div.Container")[1].style.maxWidth = "100%";
-	document.querySelectorAll("div.Container")[1].style.padding = "0 15%";
+	document.querySelectorAll("div.Container")[1].children[0].style.padding = "0"
+	document.querySelectorAll("div.Container")[1].style.maxWidth = "100%"
+	document.querySelectorAll("div.Container")[1].style.padding = "0 15%"
 	document.querySelector(".CapiTop").style.padding = "0"
-})();
+})()
