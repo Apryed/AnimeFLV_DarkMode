@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AnimeFLV - NoDistraction
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version		0.0.1
+// @version		0.0.2
 // @description		Removes AnimeFLV Right pannel and resize main content.
 // @author		Apryed
 // @match		https://www3.animeflv.net/ver/*
@@ -22,4 +22,5 @@
 	document.querySelectorAll("div.Container")[1].style.maxWidth = "100%"
 	document.querySelectorAll("div.Container")[1].style.padding = "0 15%"
 	document.querySelector(".CapiTop").style.padding = "0"
+	document.querySelector("div.CapiTcn.tab-content").style.aspectRatio="16/9"
 })()
