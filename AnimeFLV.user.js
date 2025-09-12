@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version		2.2.8
+// @version		2.2.9
 // @description		Transforms AnimeFLV to Dark Mode!
 // @author		Apryed
 // @match		https://www3.animeflv.net/*
@@ -115,7 +115,8 @@
 	.ListCaps>li>a:hover {color:var(--c-gold);}
 	.BtnNw{background:var(--c-grey);color: var(--c-white);}
 	#eSearch{border:1px solid var(--c-lgrey);color:var(--c-gold);}
-	.lstopt-frm .btn {background:var(--c-blue);color:var(--c-black);}`
+	.lstopt-frm .btn {background:var(--c-blue);color:var(--c-black);}
+	form input {color:var(--c-black);}`
 	let sS = document.createElement("style")
 	sS.setAttribute("type", "text/css")
 	sS.innerHTML = Style
