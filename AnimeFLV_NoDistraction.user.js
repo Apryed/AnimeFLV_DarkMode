@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name		AnimeFLV - NoDistraction
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version		0.0.2
+// @version		0.0.2b
 // @description		Removes AnimeFLV Right pannel and resize main content.
 // @author		Apryed
-// @match		https://www3.animeflv.net/ver/*
+// @match		https://www4.animeflv.net/ver/*
 // @icon		https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
 // @downloadURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV_NoDistraction.user.js
 // @updateURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV_NoDistraction.user.js
