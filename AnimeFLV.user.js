@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name		AnimeFLV - Dark Mode
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version		2.2.10
+// @version		2.2.92
 // @description		Transforms AnimeFLV to Dark Mode!
 // @author		Apryed
-// @match		https://www3.animeflv.net/*
+// @match		https://www4.animeflv.net/*
 // @icon		https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
 // @downloadURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
 // @updateURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV.user.js
