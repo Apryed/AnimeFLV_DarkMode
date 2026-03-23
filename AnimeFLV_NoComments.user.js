@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name		AnimeFLV - Comments Removal
 // @namespace		https://github.com/Apryed/AnimeFLV_DarkMode
-// @version		0.0.1
+// @version		0.0.1b
 // @description		Removes AnimeFLV Comment section - Will try to remove everything from Disqus in due time
 // @author		Apryed
-// @match		https://www3.animeflv.net/ver/*
+// @match		https://www4.animeflv.net/ver/*
 // @icon		https://www.google.com/s2/favicons?sz=64&domain=animeflv.net
 // @downloadURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV_NoComments.user.js
 // @updateURL		https://raw.githubusercontent.com/Apryed/AnimeFLV_DarkMode/main/AnimeFLV_NoComments.user.js
